@@ -18,7 +18,7 @@ import "./App.css";
 
 const defaultProducts = [
   {
-    id: "default-1",
+      id: "default-1",
     name: "Maveriqa Pure",
     model: "Maveriqa 1",
     image: productImg1,

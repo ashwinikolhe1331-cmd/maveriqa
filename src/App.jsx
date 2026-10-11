@@ -23,7 +23,11 @@ const defaultProducts = [
     model: "Maveriqa 1",
     image: productImg1,
     display: '5" Touch Screen Display',
-    price: "₹85,000",
+    
+    price: "₹42,500",
+    originalPrice: "₹85,000",
+    discount: "50% OFF",
+  
     specs: [
       ["Design", "Attractive Compact Model"],
       ["pH Range", "3.5 – 10.5"],
@@ -38,7 +42,11 @@ const defaultProducts = [
     model: "Maveriqa 3",
     image: productImg3,
     display: '7" Touch Screen',
-    price: "₹1,50,000",
+    price: "₹37,500",
+    originalPrice: "₹75,000",
+    discount: "50% OFF",
+    originalPrice: "₹1,50,000",
+    discount: "50% OFF",
     specs: [
       ["pH Range", "3.5 – 10.5"],
       ["ORP", "-1200+"],
@@ -52,7 +60,9 @@ const defaultProducts = [
     model: "Maveriqa 4",
     image: productImg4,
     display: '10.1" Touch Screen',
-    price: "₹1,75,000",
+    price: "₹87,500",
+    originalPrice: "₹1,75,000",
+    discount: "50% OFF",
     specs: [
       ["pH Range", "3 – 11"],
       ["ORP", "-1400+"],
@@ -66,7 +76,9 @@ const defaultProducts = [
     model: "Maveriqa 5",
     image: productImg5,
     display: '4.5" Touch Display',
-    price: "₹54,999",
+    price: "₹27,499.50",
+    originalPrice: "₹54,999",
+    discount: "50% OFF",
     specs: [
       ["Alkaline Water", "pH 7.5 – 10.5"],
       ["Acidic Water", "pH 3.5 – 5.5"],
@@ -81,7 +93,9 @@ const defaultProducts = [
     model: "Maveriqa 6",
     image: productImg6,
     display: "Digital Display • Button Operated",
-    price: "₹75,000",
+    price: "₹37,500",
+    originalPrice: "₹75,000",
+    discount: "50% OFF",
     specs: [
       [
         "pH Levels",
@@ -397,9 +411,21 @@ Thank you.`;
                     </div>
 
                     <div className="product-footer">
-                      <div>
+                      <div className="price-info">
                         <small>PRICE</small>
-                        <strong>{product.price}</strong>
+                        <div className="product-price">
+                          {product.originalPrice && (
+                            <span className="old-price">
+                              {product.originalPrice}
+                            </span>
+                          )}
+                          <strong className="new-price">
+                            {product.price || product.Price}
+                          </strong>
+                        </div>
+                        <span className="discount-badge">
+                          {product.discount || "50% OFF"}
+                        </span>
                       </div>
 
                       <button

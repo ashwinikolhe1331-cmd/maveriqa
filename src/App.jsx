@@ -23,12 +23,8 @@ const defaultProducts = [
     model: "Maveriqa 1",
     image: productImg1,
     display: '5" Touch Screen Display',
-    
-    price: "₹42,500",
-    originalPrice: "₹85,000",
-    discount: "50% OFF",
-  
-    specs: [
+     Price: "₹1,29,999",
+     specs: [
       ["Design", "Attractive Compact Model"],
       ["pH Range", "3.5 – 10.5"],
       ["ORP", "-750+"],
@@ -42,11 +38,7 @@ const defaultProducts = [
     model: "Maveriqa 3",
     image: productImg3,
     display: '7" Touch Screen',
-    price: "₹37,500",
-    originalPrice: "₹75,000",
-    discount: "50% OFF",
-    originalPrice: "₹1,50,000",
-    discount: "50% OFF",
+    Price: "₹1,50,000",
     specs: [
       ["pH Range", "3.5 – 10.5"],
       ["ORP", "-1200+"],
@@ -60,9 +52,8 @@ const defaultProducts = [
     model: "Maveriqa 4",
     image: productImg4,
     display: '10.1" Touch Screen',
-    price: "₹87,500",
-    originalPrice: "₹1,75,000",
-    discount: "50% OFF",
+    Price: "₹1,75,000",
+    
     specs: [
       ["pH Range", "3 – 11"],
       ["ORP", "-1400+"],
@@ -76,9 +67,8 @@ const defaultProducts = [
     model: "Maveriqa 5",
     image: productImg5,
     display: '4.5" Touch Display',
-    price: "₹27,499.50",
-    originalPrice: "₹54,999",
-    discount: "50% OFF",
+    Price: "₹1,09,999",
+  
     specs: [
       ["Alkaline Water", "pH 7.5 – 10.5"],
       ["Acidic Water", "pH 3.5 – 5.5"],
@@ -93,9 +83,7 @@ const defaultProducts = [
     model: "Maveriqa 6",
     image: productImg6,
     display: "Digital Display • Button Operated",
-    price: "₹37,500",
-    originalPrice: "₹75,000",
-    discount: "50% OFF",
+    Price: "₹94,999",
     specs: [
       [
         "pH Levels",
@@ -423,9 +411,7 @@ Thank you.`;
                             {product.price || product.Price}
                           </strong>
                         </div>
-                        <span className="discount-badge">
-                          {product.discount || "50% OFF"}
-                        </span>
+                        
                       </div>
 
                       <button
@@ -1120,9 +1106,9 @@ Thank you.`;
 
             <small>MOBILE</small>
 
-            <h3>+91 91454 42518</h3>
+            <h3>+91 7498998749</h3>
 
-            <a href="tel:9145442518">
+            <a href="tel:91 7498998749">
               Call Now →
             </a>
           </div>
@@ -1135,9 +1121,10 @@ Thank you.`;
             <small>ADDRESS</small>
 
             <h3>
-              Number-412, Near New English School,
-              Fursungi, Taluka-Haveli, District-Pune,
-              Maharashtra - 412308
+              Get no-447, plot no.B-52-53 Maitri park, 
+              khansi machine haveli pune Pimpri chinchwad(M corp)
+              411070
+
             </h3>
           </div>
         </div>
